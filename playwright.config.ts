@@ -44,7 +44,23 @@ const config: PlaywrightTestConfig = {
 
   /* Configure projects for major browsers */
   
+  projects: [
+    {
+      name: 'chromium',
 
+      /* Project-specific settings. */
+      use: {
+        ...devices['Desktop Chrome'],
+      },
+    },
+
+    {
+      name: 'firefox',
+      use: {
+        ...devices['Desktop Firefox'],
+      },
+    },
+  ]
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
