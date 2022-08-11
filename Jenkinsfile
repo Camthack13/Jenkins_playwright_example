@@ -21,7 +21,7 @@ pipeline {
       steps {
         sh '''
           npx playwright test --list
-          npx playwright test
+          npx playwright test --browser=firefox
         '''
       }
       post {
