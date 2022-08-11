@@ -6,7 +6,7 @@ test('homepage has Playwright in title and get started link linking to the intro
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Playwright/);
 
-  // create a locator
+  // create a locator I changed a comment
   const getStarted = page.locator('text=Get Started');
 
   // Expect an attribute "to be strictly equal" to the value.
